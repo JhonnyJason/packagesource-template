@@ -1,11 +1,3 @@
-Modules = require "./allmodules"
+Object.defineProperty(exports, "__esModule", { value: true })
 
-global.allModules = Modules
-
-run = ->
-    promises = (m.initialize() for n,m of Modules)
-    await Promise.all(promises) 
-    Modules.startupmodule.cliStartup()
-    return
-
-run()
+exports.helloWorld = -> console.log("Hello World!")
