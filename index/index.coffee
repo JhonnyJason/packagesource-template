@@ -1,3 +1,2 @@
-Object.defineProperty(exports, "__esModule", { value: true })
-
-exports.helloWorld = -> console.log("Hello World!")
+#import * as component from "./component.js"
+#export component
